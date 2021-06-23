@@ -552,17 +552,25 @@ p#subCorrugados{
     padding-bottom: 2%;
 }
 
+/* VISTA MOBILE */
 
-@media only screen and (min-width:375px) and (max-width: 1100px) {
+@media only screen and (max-width: 767px) {
     .seccion2{
         font-size: 18px;
         padding: 8% 5% 5% 5%;
+        p{
+            margin: 0;
+        }
     }
 
 .seccion2__btn--size{
     font-size: 20px;
     padding-left:5%;
     padding-right:5%;
+}
+
+.seccion3{
+    padding: 2% 10% 2% 10%;
 }
 
 .seccion3--flex{
@@ -572,9 +580,9 @@ p#subCorrugados{
 }
 
 .seccion3__texto{
-    font-size:22px;
-    margin: 10px;
-    padding: 2% 2% 2% 2%;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5% 2% 1% 2%;
     text-align: center;
 }
 
@@ -627,4 +635,40 @@ p#subCorrugados{
     width: 20%;
 }
 
+.footer{
+    font-size: 14px;
+    background-color:$grisazulado;
+    color:$grisfooter;
+    margin-top: 5%;
+    padding:8%;
 }
+
+.footer--flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__izquierda{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.footer__centro{
+    text-align: center;
+    align-items: center;
+    order: 3;
+}
+
+.footer__derecha{
+    text-align: center;
+    order: -1;
+    img{
+        margin-bottom:10px;
+    }
+}
+
+}
+
+
+/* VISTA TABLET */
