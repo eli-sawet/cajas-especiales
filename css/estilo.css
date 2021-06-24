@@ -407,6 +407,9 @@ p#subCorrugados {
   padding-right: 7%;
   padding-left: 7%; }
 
+.productosSec2--text--align {
+  text-align: right; }
+
 .productosSec2--img {
   width: 50%; }
 
@@ -522,7 +525,7 @@ p#subCorrugados {
     order: -1; }
     .footer__derecha img {
       margin-bottom: 10px; }
-  /* página Nosotros */
+  /* página Nosotros MOBILE*/
   .nosotrosSec1--flex {
     display: flex;
     flex-direction: column-reverse;
@@ -598,19 +601,142 @@ p#subCorrugados {
     text-align: center; }
   .nosotrosSec5 {
     text-align: center;
-    padding: 5%; } }
-
-/*ignorar animaciones*/
-.nosotrosSec4--flex[data-aos=fade-right] {
-  -webkit-transform: translateX(0);
-  transform: translateX(0); }
-
-.seccion4__texto[data-aos=fade-right] {
-  -webkit-transform: translateX(0);
-  transform: translateX(0); }
-
-.seccion4__imagenes[data-aos=fade-left] {
-  -webkit-transform: translateX(0);
-  transform: translateX(0); }
+    padding: 5%; }
+  /* Productos MOBILE */
+  .productosSec1 {
+    padding: 2%; }
+  .productosSec1__intro {
+    padding: 3% 3% 3% 5%; }
+  .productosSec1--titulo {
+    font-weight: 900;
+    font-size: 42px;
+    text-align: center;
+    color: #015F99; }
+  .productosSec1--texto {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center; }
+  .productosSec1__imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 3%;
+    padding-top: 3%; }
+    .productosSec1__imagenes img {
+      width: 150px; }
+  .center-image {
+    text-align: center; }
+  .productosSec1__imagenes__corrugados {
+    display: grid;
+    grid-template-areas: "imgSencillo imgDoble" "pSencillo pDoble" "imgTriple imgMicro" "pTriple pMicro" "subCorrugados subCorrugados";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 150px 30px 150px 30px 70px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px; }
+  img#imgSencillo {
+    grid-area: imgSencillo; }
+  img#imgDoble {
+    grid-area: imgDoble; }
+  p#pSencillo {
+    grid-area: pSencillo; }
+  p#Doble {
+    grid-area: pDoble; }
+  img#Triple {
+    grid-area: imgTriple; }
+  img#Micro {
+    grid-area: imgMicro; }
+  p#pTriple {
+    grid-area: pTriple; }
+  p#pMicro {
+    grid-area: pMicro; }
+  p#subCorrugados {
+    grid-area: subCorrugados;
+    display: flex;
+    justify-content: center; }
+  .productosSec1__imagenes__papeles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly; }
+  #imgKraft {
+    order: 1;
+    flex-basis: 1; }
+  #pKraft {
+    order: 3;
+    flex-basis: 50%;
+    padding-top: 15px; }
+  #imgBlanco {
+    order: 2;
+    flex-basis: 1; }
+  #pBlanco {
+    order: 4;
+    flex-basis: 50%;
+    padding-top: 15px; }
+  #subPapeles {
+    order: 5; }
+  .productosSec1--captions {
+    font-size: 18px; }
+  .productosSec1--subtitulos {
+    font-size: 26px; }
+  .productosSec2 {
+    padding: 0 5% 5% 5%; }
+    .productosSec2 div {
+      padding-top: 3%;
+      padding-bottom: 3%; }
+  .productosSec2--divAlinearIzq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .productosSec2--divAlinearDer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .productosSec2--titulo {
+    font-size: 24px; }
+  .productosSec2--texto {
+    font-size: 18px;
+    padding-top: 5%;
+    text-align: center; }
+  .productosSec2--text--align {
+    text-align: center; }
+  .productosSec2--img {
+    width: 90%; }
+  .productosSec3 {
+    margin-bottom: 10%; }
+  .productosSec3--titulo {
+    font-size: 34px; }
+  .productosSec3--texto--intro {
+    font-size: 18px;
+    padding: 3% 5% 3% 5%; }
+  .productosSec3__container--main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%; }
+  .productosSec3--subtitulos {
+    font-size: 24px;
+    padding-top: 8%; }
+  .productosSec3--texto--img {
+    font-weight: 400;
+    font-size: 18px;
+    padding-right: 5%;
+    padding-left: 5%; }
+  .productosSec3--img {
+    width: 80%; }
+  /*ignorar animaciones MOBILE*/
+  .nosotrosSec4--flex[data-aos=fade-right] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  .seccion4__texto[data-aos=fade-right] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  .seccion4__imagenes[data-aos=fade-left] {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
 
 /* VISTA TABLET */
