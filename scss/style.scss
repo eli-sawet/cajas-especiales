@@ -580,7 +580,7 @@ p#subCorrugados{
 }
 
 .seccion3__texto{
-    font-size: 20px;
+    font-size: 18px;
     margin: 5px;
     padding: 5% 2% 1% 2%;
     text-align: center;
@@ -588,15 +588,15 @@ p#subCorrugados{
 
 .seccion4{
     margin: 0;
-    padding: 3%;
+    padding: 10%;
 }
 
 .seccion4__titulo{
-    font-size: 24px;
+    font-size: 21px;
 }
 
 .seccion4__subtitulo{
-    font-size:22px;
+    font-size:20px;
 }
 
 .seccion4__texto{
@@ -668,7 +668,142 @@ p#subCorrugados{
     }
 }
 
+/* página Nosotros */
+
+
+.nosotrosSec1--flex{
+    display: flex;
+    flex-direction: column-reverse;
+    margin:0;
+    padding:0;
+    align-items: flex-end;
 }
 
+.nosotrosSec1__titulo{
+    font-size: 42px;
+    text-align: center;
+    padding-top: 5%;
+}
 
+.nosotrosSec1__texto{
+    font-size: 18px;
+}
+
+.nosotrosSec1__img{
+    width: 120%;
+    height: auto;
+    margin: 0;
+    padding-top:0;
+}
+
+.nosotrosSec2{
+    padding: 5% 10% 5% 10%;
+}
+
+.nosotrosSec2--background{
+    background: $grisazulado;
+    border-radius: 50px;
+}
+
+.nosotrosSec2--flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.nosotrosSec2--flex--izq, .nosotrosSec2--flex--centro, .nosotrosSec2--flex--der{
+    flex:1;
+    padding: 0 15px 0 15px;
+    margin: 0;
+}
+
+.nosotrosSec2--titulo{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 15%;
+}
+
+.nosotrosSec2--subtitulo{
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.nosotrosSec2--texto{
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.nosotrosSec3{
+    padding: 0% 10% 5% 10%;
+}
+
+.nosotrosSec3--flex{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        img{
+            width:100px;
+        }
+}
+
+.nosotrosSec3--titulo{
+    font-size: 24px;
+}
+
+.nosotrosSec3--texto{
+    font-size: 18px;
+}
+
+.nosotrosSec4{
+    padding: 5% 10% 5% 10%;
+}
+
+.nosotrosSec4--flex{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+        img{
+            margin:0;
+            height: 10px;
+            opacity: 0%;
+        }
+}
+
+.nosotrosSec4--titulo{
+    font-size: 32px;
+    text-align: center;
+}
+
+.nosotrosSec4--texto{
+    font-size:18px;
+    text-align: center;
+}
+
+.nosotrosSec5{
+    text-align: center;
+    padding: 5%;
+}
+
+}
+
+/*ignorar animaciones*/
+.nosotrosSec4--flex[data-aos=fade-right]{
+    -webkit-transform: translateX(0);
+        transform: translateX(0);
+}
+
+.seccion4__texto[data-aos=fade-right]{
+    -webkit-transform: translateX(0);
+        transform: translateX(0);
+}
+
+.seccion4__imagenes[data-aos=fade-left]{
+    -webkit-transform: translateX(0);
+        transform: translateX(0);
+}
 /* VISTA TABLET */
