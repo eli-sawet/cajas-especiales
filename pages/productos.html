@@ -59,35 +59,25 @@
           <h1 class="productosSec1--titulo">Productos</h1>
           <p class="productosSec1--texto">Fabricamos cajas de cartón corrugado sencillo, doble y micro, en cualquier medida y resistencia; con papeles kraft o blanco.</p>
         </div>
-        <div class="col-12 col-md-8 productosSec1__imagenes">
-          <div class="productosSec1__imagenes__corrugados text-center">
-            <div class="center-image">
-            <img src="../images/sencillo.png" alt="corrugado sencillo" id="imgSencillo"/>
+        <div class="col-12 col-md-4 productosSec1__corrugado text-center">
+            <div id="imagenCorrugado" class="productosSec1__corrugado__imagen"></div>
+            <h3 class="productosSec1--subtitulos" id="subCorrugado">corrugado</h3>
+            <div class="productosSec1__corrugado--botones">
+              <button onclick="showSencillo()" class="btn btn-outline-primary m-2 btn--linea">sencillo</button>  
+              <button onclick="showDoble()" class="btn btn-outline-primary m-2 btn--linea">doble</button>  
+              <button onclick="showTriple()" class="btn btn-outline-primary m-2 btn--linea">triple</button>  
+              <button onclick="showMicro()" class="btn btn-outline-primary m-2 btn--linea">micro</button>  
             </div>
-            <p class="productosSec1--captions" id="pSencillo">sencillo</p>
-            <div class="center-image">
-            <img src="../images/doblecorrugado.png" alt="corrugado doble" id="imgDoble"/>
-            </div>
-            <p class="productosSec1--captions" id="pDoble">doble</p>
-            <div class="center-image">
-            <img src="../images/triple.png" alt="corrugado triple" id="imgTriple"/>
-            </div>
-            <p class="productosSec1--captions" id="pTriple">triple</p>
-            <div class="center-image">
-            <img src="../images/microcorrugado.png" alt="corrugado micro" id="imgMicro"/>
-          </div>
-            <p class="productosSec1--captions" id="pMicro">micro</p>
-            <h3 class="productosSec1--subtitulos" id="subCorrugados">corrugados</h3>
         </div>
-        <div class="productosSec1__imagenes__papeles text-center">
-            <img src="../images/kraft.png" alt="papel kraft" id="imgKraft"/>
-            <p class="productosSec1--captions" id="pKraft">kraft</p>
-            <img src="../images/blanco.png" alt="papel blanco" id="imgBlanco"/>
-            <p class="productosSec1--captions" id="pBlanco">blanco</p>
-            <h3 class="productosSec1--subtitulos" id="subPapeles">papeles</h3>
+        <div class="col-12 col-md-4 productosSec1__carton text-center">
+          <div id="imagenCarton" class="productosSec1__carton__imagen"></div>
+            <h3 class="productosSec1--subtitulos" id="subCarton">cartón</h3>
+            <div class="productosSec1__carton--botones">
+              <button onclick="showKraft()" class="btn btn-outline-primary m-2 btn--linea">kraft</button>
+              <button onclick="showBlanco()" class="btn btn-outline-primary m-2 btn--linea">blanco</button>
+            </div>
         </div>
         </div>
-      </div>
     </div>
 
     <!--productosSec2 (imagenes productos)-->
@@ -178,5 +168,28 @@
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- JS imagenes-->
+    <script>
+      function showSencillo() {
+         document.getElementById("imagenCorrugado").style.backgroundImage = "url(../images/sencillo-corrugado.png)";
+      }
+      function showDoble() {
+         document.getElementById("imagenCorrugado").style.backgroundImage = "url(../images/doble-corrugado.png)";
+      }
+      function showTriple() {
+         document.getElementById("imagenCorrugado").style.backgroundImage = "url(../images/triple-corrugado.png)";
+      }
+      function showMicro() {
+         document.getElementById("imagenCorrugado").style.backgroundImage = "url(../images/micro-corrugado.png)";
+      }
+      function showKraft() {
+         document.getElementById("imagenCarton").style.backgroundImage = "url(../images/lamina-kraft.png)";
+      }
+      function showBlanco() {
+         document.getElementById("imagenCarton").style.backgroundImage = "url(../images/lamina-blanca.png)";
+      }
+      </script>
+
 </body>
 </html>

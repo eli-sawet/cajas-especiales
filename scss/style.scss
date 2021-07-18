@@ -405,64 +405,30 @@ a{
     font-size: 24px;
 }
 
-.productosSec1__imagenes{
-    display:flex;
-    justify-content: space-evenly;
-    padding-right: 3%;
-    padding-top: 3%;
+.productosSec1__corrugado__imagen{
+    height: 400px;
+    padding: 5%; 
+    background-image: url('../images/sencillo-corrugado.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.productosSec1__imagenes__corrugados{
-    display: grid;
-    grid-template-areas: 
-    "imgSencillo imgDoble"
-    "pSencillo pDoble"
-    "imgTriple imgMicro"
-    "pTriple pMicro"
-    "subCorrugados subCorrugados";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 180px 30px 180px 30px 70px;
-    grid-column-gap: 30px;
-    grid-row-gap: 10px;
+.productosSec1__carton__imagen{
+    height: 400px;
+    padding: 5%; 
+    background-image: url('../images/lamina-kraft.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-img#imgSencillo{
-    grid-area: imgSencillo;
-}
-img#imgDoble{
-    grid-area: imgDoble;
-}
-p#pSencillo{
-    grid-area: pSencillo;
-}
-p#Doble{
-    grid-area: pDoble;
-}
-img#Triple{
-    grid-area: imgTriple;
-}
-img#Micro{
-    grid-area: imgMicro;
-}
-p#pTriple{
-    grid-area: pTriple;
-}
-p#pMicro{
-    grid-area: pMicro;
-}
-p#subCorrugados{
-    grid-area: subCorrugados;
-}
-
-.productosSec1__imagenes__papeles{
-    display: flex;
-    flex-direction: column;  
-    align-items: center;
-}
-
-.productosSec1--captions{
-    font-size: 18px;
-    font-weight: 900;
+.btn--linea{
+    color:$azulpce;
+    border-color:$azulpce;
+    &:hover{
+        background-color: $azulpce;
+    }
 }
 
 .productosSec1--subtitulos{
