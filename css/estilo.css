@@ -179,24 +179,6 @@ a {
     color: #007cc9;
     text-decoration: none; }
 
-/* página CONTACTO */
-.mapa {
-  padding-left: 0;
-  padding-right: 0; }
-
-.mapa--size {
-  height: 350px; }
-
-.contacto {
-  padding-top: 8%;
-  padding-bottom: 3%;
-  font-size: 18px; }
-  .contacto h2 {
-    font-size: 30px;
-    margin-bottom: 20px; }
-  .contacto h3 {
-    font-size: 20px; }
-
 /* página Nosotros */
 .nosotrosSec1 {
   margin: 0; }
